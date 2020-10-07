@@ -1,0 +1,1 @@
+![image-20201007154131580](bincominer.assets/image-20201007154131580.png)
