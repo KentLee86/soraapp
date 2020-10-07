@@ -1,12 +1,12 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.1.1">Jekyll</generator><link href="http://localhost:4000/soraapp/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/soraapp/" rel="alternate" type="text/html" /><updated>2020-10-07T16:05:20+09:00</updated><id>http://localhost:4000/soraapp/feed.xml</id><title type="html">SORA APP</title><subtitle>Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.</subtitle><entry><title type="html">BinCombiner - Binary 파일 합치기</title><link href="http://localhost:4000/soraapp/jekyll/update/2020/10/07/binary-combiner.html" rel="alternate" type="text/html" title="BinCombiner - Binary 파일 합치기" /><published>2020-10-07T14:52:12+09:00</published><updated>2020-10-07T14:52:12+09:00</updated><id>http://localhost:4000/soraapp/jekyll/update/2020/10/07/binary%20combiner</id><content type="html" xml:base="http://localhost:4000/soraapp/jekyll/update/2020/10/07/binary-combiner.html">&lt;p&gt;&lt;img src=&quot;http://localhost:4000//soraapp/imgs/bincominer.assets/image-20201007154131580.png&quot; alt=&quot;image-20201007153540281&quot; /&gt;&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.1.1">Jekyll</generator><link href="http://localhost:4000/soraapp/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/soraapp/" rel="alternate" type="text/html" /><updated>2020-10-07T16:16:09+09:00</updated><id>http://localhost:4000/soraapp/feed.xml</id><title type="html">SORA APP</title><subtitle>개발에 유용한 직접 만들 툴 리스트</subtitle><entry><title type="html">BinCombiner - Binary 파일 합치기</title><link href="http://localhost:4000/soraapp/jekyll/update/2020/10/07/binary-combiner.html" rel="alternate" type="text/html" title="BinCombiner - Binary 파일 합치기" /><published>2020-10-07T14:52:12+09:00</published><updated>2020-10-07T14:52:12+09:00</updated><id>http://localhost:4000/soraapp/jekyll/update/2020/10/07/binary%20combiner</id><content type="html" xml:base="http://localhost:4000/soraapp/jekyll/update/2020/10/07/binary-combiner.html">&lt;p&gt;&lt;img src=&quot;/soraapp/imgs/bincominer.assets/image-20201007154131580.png&quot; alt=&quot;image-20201007153540281&quot; /&gt;&lt;/p&gt;
 
 &lt;h1 id=&quot;사용법&quot;&gt;사용법&lt;/h1&gt;
 
-&lt;p&gt;&lt;img src=&quot;http://localhost:4000//soraapp/imgs/bincominer.assets/2020-10-07_15-51-30.gif&quot; alt=&quot;2020-10-07_15-51-30&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/soraapp/imgs/bincominer.assets/2020-10-07_15-51-30.gif&quot; alt=&quot;2020-10-07_15-51-30&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;실행 결과&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;http://localhost:4000//soraapp/imgs/bincominer.assets/image-20201007154927810.png&quot; alt=&quot;image-20201007154927810&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/soraapp/imgs/bincominer.assets/image-20201007154927810.png&quot; alt=&quot;image-20201007154927810&quot; /&gt;&lt;/p&gt;
 
 &lt;ul&gt;
   &lt;li&gt;파일을 드래그 드랍으로 추가한다&lt;/li&gt;
@@ -18,7 +18,7 @@
 
 &lt;h2 id=&quot;v2&quot;&gt;v2&lt;/h2&gt;
 
-&lt;p&gt;&lt;a href=&quot;http://localhost:4000//soraapp/download/bincombiner_v2.zip&quot;&gt;다운로드&lt;/a&gt;&lt;/p&gt;</content><author><name></name></author><category term="jekyll" /><category term="update" /><summary type="html"></summary></entry><entry><title type="html">FakeBin - 테스트용 가짜 Binary 생성기</title><link href="http://localhost:4000/soraapp/jekyll/update/2020/10/07/Fake-binanry-gererator.html" rel="alternate" type="text/html" title="FakeBin - 테스트용 가짜 Binary 생성기" /><published>2020-10-07T14:52:12+09:00</published><updated>2020-10-07T14:52:12+09:00</updated><id>http://localhost:4000/soraapp/jekyll/update/2020/10/07/Fake-binanry-gererator</id><content type="html" xml:base="http://localhost:4000/soraapp/jekyll/update/2020/10/07/Fake-binanry-gererator.html">&lt;p&gt;&lt;img src=&quot;http://localhost:4000//soraapp/imgs/fakebin.assets/image-20201007153540281.png&quot; alt=&quot;image-20201007153540281&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;/soraapp/download/bincombiner_v2.zip&quot;&gt;다운로드&lt;/a&gt;&lt;/p&gt;</content><author><name></name></author><category term="jekyll" /><category term="update" /><summary type="html"></summary></entry><entry><title type="html">FakeBin - 테스트용 가짜 Binary 생성기</title><link href="http://localhost:4000/soraapp/jekyll/update/2020/10/07/Fake-binanry-gererator.html" rel="alternate" type="text/html" title="FakeBin - 테스트용 가짜 Binary 생성기" /><published>2020-10-07T14:52:12+09:00</published><updated>2020-10-07T14:52:12+09:00</updated><id>http://localhost:4000/soraapp/jekyll/update/2020/10/07/Fake-binanry-gererator</id><content type="html" xml:base="http://localhost:4000/soraapp/jekyll/update/2020/10/07/Fake-binanry-gererator.html">&lt;p&gt;&lt;img src=&quot;/soraapp/imgs/fakebin.assets/image-20201007153540281.png&quot; alt=&quot;image-20201007153540281&quot; /&gt;&lt;/p&gt;
 
 &lt;h1 id=&quot;사용법&quot;&gt;사용법&lt;/h1&gt;
 
@@ -31,7 +31,7 @@
 
 &lt;h2 id=&quot;v2&quot;&gt;v2&lt;/h2&gt;
 
-&lt;p&gt;&lt;a href=&quot;http://localhost:4000//soraapp/download/fbg_v1.zip&quot;&gt;다운로드&lt;/a&gt;&lt;/p&gt;</content><author><name></name></author><category term="jekyll" /><category term="update" /><summary type="html"></summary></entry><entry><title type="html">BinToH - 바이너리 파일을 C 코드에 넣기 위한 Array 변환툴</title><link href="http://localhost:4000/soraapp/jekyll/update/2020/10/07/bin-to-h.html" rel="alternate" type="text/html" title="BinToH - 바이너리 파일을 C 코드에 넣기 위한 Array 변환툴" /><published>2020-10-07T14:52:12+09:00</published><updated>2020-10-07T14:52:12+09:00</updated><id>http://localhost:4000/soraapp/jekyll/update/2020/10/07/bin-to-h</id><content type="html" xml:base="http://localhost:4000/soraapp/jekyll/update/2020/10/07/bin-to-h.html">&lt;p&gt;&lt;img src=&quot;http://localhost:4000//soraapp/imgs/bintoh.assets/image-20201007160213227.png&quot; alt=&quot;image-20201007160213227&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;/soraapp/download/fbg_v1.zip&quot;&gt;다운로드&lt;/a&gt;&lt;/p&gt;</content><author><name></name></author><category term="jekyll" /><category term="update" /><summary type="html"></summary></entry><entry><title type="html">BinToH - 바이너리 파일을 C 코드에 넣기 위한 Array 변환툴</title><link href="http://localhost:4000/soraapp/jekyll/update/2020/10/07/bin-to-h.html" rel="alternate" type="text/html" title="BinToH - 바이너리 파일을 C 코드에 넣기 위한 Array 변환툴" /><published>2020-10-07T14:52:12+09:00</published><updated>2020-10-07T14:52:12+09:00</updated><id>http://localhost:4000/soraapp/jekyll/update/2020/10/07/bin-to-h</id><content type="html" xml:base="http://localhost:4000/soraapp/jekyll/update/2020/10/07/bin-to-h.html">&lt;p&gt;&lt;img src=&quot;/soraapp/imgs/bintoh.assets/image-20201007160213227.png&quot; alt=&quot;image-20201007160213227&quot; /&gt;&lt;/p&gt;
 
 &lt;h1 id=&quot;사용법&quot;&gt;사용법&lt;/h1&gt;
 
@@ -54,4 +54,4 @@
 
 &lt;h2 id=&quot;v1&quot;&gt;v1&lt;/h2&gt;
 
-&lt;p&gt;&lt;a href=&quot;http://localhost:4000//soraapp/download/bintoh_v1.zip&quot;&gt;다운로드&lt;/a&gt;&lt;/p&gt;</content><author><name></name></author><category term="jekyll" /><category term="update" /><summary type="html"></summary></entry></feed>
+&lt;p&gt;&lt;a href=&quot;/soraapp/download/bintoh_v1.zip&quot;&gt;다운로드&lt;/a&gt;&lt;/p&gt;</content><author><name></name></author><category term="jekyll" /><category term="update" /><summary type="html"></summary></entry></feed>
