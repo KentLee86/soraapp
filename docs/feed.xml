@@ -1,4 +1,28 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.1.1">Jekyll</generator><link href="http://localhost:4000/soraapp/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/soraapp/" rel="alternate" type="text/html" /><updated>2020-10-07T15:23:27+09:00</updated><id>http://localhost:4000/soraapp/feed.xml</id><title type="html">SORA APP</title><subtitle>Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.</subtitle><entry><title type="html">Welcome1 to Jekyll1!</title><link href="http://localhost:4000/soraapp/jekyll/update/2020/10/07/welcome-to-jekyll.html" rel="alternate" type="text/html" title="Welcome1 to Jekyll1!" /><published>2020-10-07T14:52:12+09:00</published><updated>2020-10-07T14:52:12+09:00</updated><id>http://localhost:4000/soraapp/jekyll/update/2020/10/07/welcome-to-jekyll</id><content type="html" xml:base="http://localhost:4000/soraapp/jekyll/update/2020/10/07/welcome-to-jekyll.html">&lt;p&gt;You’ll find this post in your &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;_posts&lt;/code&gt; directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;jekyll serve&lt;/code&gt;, which launches a web server and auto-regenerates your site when a file is updated.&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.1.1">Jekyll</generator><link href="http://localhost:4000/soraapp/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/soraapp/" rel="alternate" type="text/html" /><updated>2020-10-07T15:54:34+09:00</updated><id>http://localhost:4000/soraapp/feed.xml</id><title type="html">SORA APP</title><subtitle>Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.</subtitle><entry><title type="html">BinCombiner - Binary 파일 합치기</title><link href="http://localhost:4000/soraapp/jekyll/update/2020/10/07/binary-combiner.html" rel="alternate" type="text/html" title="BinCombiner - Binary 파일 합치기" /><published>2020-10-07T14:52:12+09:00</published><updated>2020-10-07T14:52:12+09:00</updated><id>http://localhost:4000/soraapp/jekyll/update/2020/10/07/binary%20combiner</id><content type="html" xml:base="http://localhost:4000/soraapp/jekyll/update/2020/10/07/binary-combiner.html">&lt;p&gt;&lt;img src=&quot;http://localhost:4000//soraapp/imgs/bincominer.assets/image-20201007154131580.png&quot; alt=&quot;image-20201007153540281&quot; /&gt;&lt;/p&gt;
+
+&lt;h1 id=&quot;사용법&quot;&gt;사용법&lt;/h1&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://localhost:4000//soraapp/imgs/bincominer.assets/2020-10-07_15-51-30.gif&quot; alt=&quot;2020-10-07_15-51-30&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;실행 결과&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://localhost:4000//soraapp/imgs/bincominer.assets/image-20201007154927810.png&quot; alt=&quot;image-20201007154927810&quot; /&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;파일을 드래그 드랍으로 추가한다&lt;/li&gt;
+  &lt;li&gt;오프셋 위치(파일이 위치할 위치)를 입력하거나 “오프셋계산”을 이용한다&lt;/li&gt;
+  &lt;li&gt;생성을 눌러 파일을 생성 한다.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h1 id=&quot;다운로드&quot;&gt;다운로드&lt;/h1&gt;
+
+&lt;h2 id=&quot;v1&quot;&gt;v1&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://localhost:4000//soraapp/download/bincombiner_v2.zip&quot;&gt;다운로드&lt;/a&gt;&lt;/p&gt;</content><author><name></name></author><category term="jekyll" /><category term="update" /><summary type="html"></summary></entry><entry><title type="html">FakeBin - 테스트용 가짜 Binary 생성기</title><link href="http://localhost:4000/soraapp/jekyll/update/2020/10/07/Fake-binanry-gererator.html" rel="alternate" type="text/html" title="FakeBin - 테스트용 가짜 Binary 생성기" /><published>2020-10-07T14:52:12+09:00</published><updated>2020-10-07T14:52:12+09:00</updated><id>http://localhost:4000/soraapp/jekyll/update/2020/10/07/Fake-binanry-gererator</id><content type="html" xml:base="http://localhost:4000/soraapp/jekyll/update/2020/10/07/Fake-binanry-gererator.html">&lt;p&gt;&lt;img src=&quot;http://localhost:4000//soraapp/imgs/fakebin.assets/image-20201007153540281.png&quot; alt=&quot;image-20201007153540281&quot; /&gt;&lt;/p&gt;
+
+&lt;h1 id=&quot;사용법&quot;&gt;사용법&lt;/h1&gt;
+
+&lt;p&gt;You’ll find this post in your &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;_posts&lt;/code&gt; directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;jekyll serve&lt;/code&gt;, which launches a web server and auto-regenerates your site when a file is updated.&lt;/p&gt;
 
 &lt;p&gt;Jekyll requires blog post files to be named according to the following format:&lt;/p&gt;
 
@@ -14,4 +38,4 @@
 &lt;span class=&quot;n&quot;&gt;print_hi&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;'Tom'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
 &lt;span class=&quot;c1&quot;&gt;#=&amp;gt; prints 'Hi, Tom' to STDOUT.&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
 
-&lt;p&gt;Check out the &lt;a href=&quot;https://jekyllrb.com/docs/home&quot;&gt;Jekyll docs&lt;/a&gt; for more info on how to get the most out of Jekyll. File all bugs/feature requests at &lt;a href=&quot;https://github.com/jekyll/jekyll&quot;&gt;Jekyll’s GitHub repo&lt;/a&gt;. If you have questions, you can ask them on &lt;a href=&quot;https://talk.jekyllrb.com/&quot;&gt;Jekyll Talk&lt;/a&gt;.&lt;/p&gt;</content><author><name></name></author><category term="jekyll" /><category term="update" /><summary type="html">You’ll find this post in your _posts directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run jekyll serve, which launches a web server and auto-regenerates your site when a file is updated.</summary></entry></feed>
+&lt;p&gt;Check out the &lt;a href=&quot;https://jekyllrb.com/docs/home&quot;&gt;Jekyll docs&lt;/a&gt; for more info on how to get the most out of Jekyll. File all bugs/feature requests at &lt;a href=&quot;https://github.com/jekyll/jekyll&quot;&gt;Jekyll’s GitHub repo&lt;/a&gt;. If you have questions, you can ask them on &lt;a href=&quot;https://talk.jekyllrb.com/&quot;&gt;Jekyll Talk&lt;/a&gt;.&lt;/p&gt;</content><author><name></name></author><category term="jekyll" /><category term="update" /><summary type="html"></summary></entry></feed>
