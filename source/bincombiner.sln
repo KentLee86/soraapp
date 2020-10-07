@@ -1,0 +1,37 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30523.141
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "bincombiner", "bincombiner\bincombiner.csproj", "{3CFF984B-3D5B-4FA7-8074-EAEB930B0F88}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "bingenerator", "bingenerator\bingenerator.csproj", "{EC189C28-E707-4025-8DFB-FFE3F19DED05}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "bintoh", "bintoh\bintoh.csproj", "{02EBF8FD-399E-4349-BF0E-AFD3B1CF7C38}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{3CFF984B-3D5B-4FA7-8074-EAEB930B0F88}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3CFF984B-3D5B-4FA7-8074-EAEB930B0F88}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3CFF984B-3D5B-4FA7-8074-EAEB930B0F88}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3CFF984B-3D5B-4FA7-8074-EAEB930B0F88}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EC189C28-E707-4025-8DFB-FFE3F19DED05}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EC189C28-E707-4025-8DFB-FFE3F19DED05}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EC189C28-E707-4025-8DFB-FFE3F19DED05}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EC189C28-E707-4025-8DFB-FFE3F19DED05}.Release|Any CPU.Build.0 = Release|Any CPU
+		{02EBF8FD-399E-4349-BF0E-AFD3B1CF7C38}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{02EBF8FD-399E-4349-BF0E-AFD3B1CF7C38}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{02EBF8FD-399E-4349-BF0E-AFD3B1CF7C38}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{02EBF8FD-399E-4349-BF0E-AFD3B1CF7C38}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {9571704D-AB2C-4A8A-960C-2E456CD99337}
+	EndGlobalSection
+EndGlobal
