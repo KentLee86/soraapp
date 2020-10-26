@@ -48,13 +48,19 @@
             this.button9 = new System.Windows.Forms.Button();
             this.checkBox1 = new System.Windows.Forms.CheckBox();
             this.richTextBox1 = new System.Windows.Forms.RichTextBox();
+            this.button10 = new System.Windows.Forms.Button();
+            this.checkBox2 = new System.Windows.Forms.CheckBox();
+            this.OffsetText = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.IsWriteVersion = new System.Windows.Forms.DataGridViewCheckBoxColumn();
+            this.VersionMajorText = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.VersionMinorText = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.VersionOffsetText = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.fiDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.fileNameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.fileSizeDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.offsetTextDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.cRCDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.bindingSource1 = new System.Windows.Forms.BindingSource(this.components);
-            this.button10 = new System.Windows.Forms.Button();
+            this.checkBox3 = new System.Windows.Forms.CheckBox();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).BeginInit();
             this.groupBox1.SuspendLayout();
@@ -71,7 +77,11 @@
             this.fiDataGridViewTextBoxColumn,
             this.fileNameDataGridViewTextBoxColumn,
             this.fileSizeDataGridViewTextBoxColumn,
-            this.offsetTextDataGridViewTextBoxColumn,
+            this.OffsetText,
+            this.IsWriteVersion,
+            this.VersionMajorText,
+            this.VersionMinorText,
+            this.VersionOffsetText,
             this.cRCDataGridViewTextBoxColumn});
             this.dataGridView1.DataSource = this.bindingSource1;
             this.dataGridView1.Location = new System.Drawing.Point(12, 42);
@@ -269,11 +279,65 @@
             this.richTextBox1.TabIndex = 12;
             this.richTextBox1.Text = "";
             // 
+            // button10
+            // 
+            this.button10.Location = new System.Drawing.Point(635, 12);
+            this.button10.Name = "button10";
+            this.button10.Size = new System.Drawing.Size(75, 23);
+            this.button10.TabIndex = 7;
+            this.button10.Text = "생성";
+            this.button10.UseVisualStyleBackColor = true;
+            this.button10.Click += new System.EventHandler(this.button6_Click);
+            // 
+            // checkBox2
+            // 
+            this.checkBox2.AutoSize = true;
+            this.checkBox2.Location = new System.Drawing.Point(633, 286);
+            this.checkBox2.Name = "checkBox2";
+            this.checkBox2.Size = new System.Drawing.Size(91, 16);
+            this.checkBox2.TabIndex = 11;
+            this.checkBox2.Text = "Version입력";
+            this.checkBox2.UseVisualStyleBackColor = true;
+            // 
+            // OffsetText
+            // 
+            this.OffsetText.DataPropertyName = "OffsetText";
+            this.OffsetText.HeaderText = "Offset";
+            this.OffsetText.Name = "OffsetText";
+            // 
+            // IsWriteVersion
+            // 
+            this.IsWriteVersion.DataPropertyName = "IsWriteVersion";
+            this.IsWriteVersion.HeaderText = "VerWrite";
+            this.IsWriteVersion.Name = "IsWriteVersion";
+            this.IsWriteVersion.Width = 40;
+            // 
+            // VersionMajorText
+            // 
+            this.VersionMajorText.DataPropertyName = "VersionMajorText";
+            this.VersionMajorText.HeaderText = "VerMajor";
+            this.VersionMajorText.Name = "VersionMajorText";
+            this.VersionMajorText.Width = 60;
+            // 
+            // VersionMinorText
+            // 
+            this.VersionMinorText.DataPropertyName = "VersionMinorText";
+            this.VersionMinorText.HeaderText = "VerMinor";
+            this.VersionMinorText.Name = "VersionMinorText";
+            this.VersionMinorText.Width = 60;
+            // 
+            // VersionOffsetText
+            // 
+            this.VersionOffsetText.DataPropertyName = "VersionOffsetText";
+            this.VersionOffsetText.HeaderText = "VerOffset";
+            this.VersionOffsetText.Name = "VersionOffsetText";
+            // 
             // fiDataGridViewTextBoxColumn
             // 
             this.fiDataGridViewTextBoxColumn.DataPropertyName = "fi";
             this.fiDataGridViewTextBoxColumn.HeaderText = "fi";
             this.fiDataGridViewTextBoxColumn.Name = "fiDataGridViewTextBoxColumn";
+            this.fiDataGridViewTextBoxColumn.Visible = false;
             // 
             // fileNameDataGridViewTextBoxColumn
             // 
@@ -289,12 +353,6 @@
             this.fileSizeDataGridViewTextBoxColumn.Name = "fileSizeDataGridViewTextBoxColumn";
             this.fileSizeDataGridViewTextBoxColumn.ReadOnly = true;
             // 
-            // offsetTextDataGridViewTextBoxColumn
-            // 
-            this.offsetTextDataGridViewTextBoxColumn.DataPropertyName = "OffsetText";
-            this.offsetTextDataGridViewTextBoxColumn.HeaderText = "OffsetText";
-            this.offsetTextDataGridViewTextBoxColumn.Name = "offsetTextDataGridViewTextBoxColumn";
-            // 
             // cRCDataGridViewTextBoxColumn
             // 
             this.cRCDataGridViewTextBoxColumn.DataPropertyName = "CRC";
@@ -307,15 +365,15 @@
             this.bindingSource1.DataSource = typeof(FileInfos);
             this.bindingSource1.CurrentChanged += new System.EventHandler(this.bindingSource1_CurrentChanged);
             // 
-            // button10
+            // checkBox3
             // 
-            this.button10.Location = new System.Drawing.Point(635, 12);
-            this.button10.Name = "button10";
-            this.button10.Size = new System.Drawing.Size(75, 23);
-            this.button10.TabIndex = 7;
-            this.button10.Text = "생성";
-            this.button10.UseVisualStyleBackColor = true;
-            this.button10.Click += new System.EventHandler(this.button6_Click);
+            this.checkBox3.AutoSize = true;
+            this.checkBox3.Location = new System.Drawing.Point(633, 264);
+            this.checkBox3.Name = "checkBox3";
+            this.checkBox3.Size = new System.Drawing.Size(102, 16);
+            this.checkBox3.TabIndex = 11;
+            this.checkBox3.Text = "마지막ff채우기";
+            this.checkBox3.UseVisualStyleBackColor = true;
             // 
             // Form1
             // 
@@ -323,6 +381,8 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 641);
             this.Controls.Add(this.richTextBox1);
+            this.Controls.Add(this.checkBox2);
+            this.Controls.Add(this.checkBox3);
             this.Controls.Add(this.checkBox1);
             this.Controls.Add(this.button9);
             this.Controls.Add(this.button8);
@@ -372,15 +432,22 @@
         private System.Windows.Forms.Button button6;
         private System.Windows.Forms.Button button7;
         private System.Windows.Forms.Button button8;
-        private System.Windows.Forms.DataGridViewTextBoxColumn fiDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn fileNameDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn fileSizeDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn offsetTextDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn cRCDataGridViewTextBoxColumn;
         private System.Windows.Forms.Button button9;
         private System.Windows.Forms.CheckBox checkBox1;
         private System.Windows.Forms.RichTextBox richTextBox1;
         private System.Windows.Forms.Button button10;
+        private System.Windows.Forms.CheckBox checkBox2;
+        private System.Windows.Forms.DataGridViewTextBoxColumn offsetTextDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn fiDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn fileNameDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn fileSizeDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn OffsetText;
+        private System.Windows.Forms.DataGridViewCheckBoxColumn IsWriteVersion;
+        private System.Windows.Forms.DataGridViewTextBoxColumn VersionMajorText;
+        private System.Windows.Forms.DataGridViewTextBoxColumn VersionMinorText;
+        private System.Windows.Forms.DataGridViewTextBoxColumn VersionOffsetText;
+        private System.Windows.Forms.DataGridViewTextBoxColumn cRCDataGridViewTextBoxColumn;
+        private System.Windows.Forms.CheckBox checkBox3;
     }
 }
 

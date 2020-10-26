@@ -37,6 +37,54 @@ class FileInfos
         }
     }
 
+    public UInt16 VersionMajor;
+
+    public string VersionMajorText
+    {
+        get
+        {
+            return VersionMajor.ToString("X04");
+        }
+        set
+        {
+            VersionMajor = Convert.ToUInt16(value, 16);
+        }
+    }
+
+    public UInt16 VersionMinor;
+
+    public string VersionMinorText
+    {
+        get
+        {
+            return VersionMinor.ToString("X04");
+        }
+        set
+        {
+            VersionMinor = Convert.ToUInt16(value, 16);
+        }
+    }
+
+    public long VersionOffset;
+
+    public string VersionOffsetText
+    {
+        get
+        {
+            return VersionOffset.ToString("X08");
+        }
+        set
+        {
+            VersionOffset = Convert.ToInt64(value, 16);
+        }
+    }
+
+    public bool IsWriteVersion
+    {
+        get;
+        set;
+    }
+
     public UInt32 _crc;
     public string CRC
     {

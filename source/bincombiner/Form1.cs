@@ -83,12 +83,12 @@ namespace bincombiner
             }
 
 
-
-            // bindingSource1.Add(new FileInfos(){fi = new FileInfo("bincombiner.exe") });
-            // bindingSource1.Add(new FileInfos(){fi = new FileInfo("bincombiner.pdb"), Offset = 0x5000});
-
-
+#if false
+            LoadConfig("test1.json");
             RefreshCrc();
+
+            Gereration("test.bin");
+#endif
         }
 
         private void bindingSource1_CurrentChanged(object sender, EventArgs e)
@@ -259,18 +259,9 @@ namespace bincombiner
                 for (int n = 0; n < bindingSource1.Count; n++)
                 {
                     var b = bindingSource1[n] as FileInfos;
+                    var fileStartOffset = f.Position;
 
-                    if (prv != null)
-                    {
-                        if (length < b.Offset)
-                        {
-                            var len = b.Offset - length;
-                            f.Write(new byte[len], 0, (int)len);
-                            length += len;
-                        }
-                    }
-
-                    if (prv == null)
+                    if (n == 0)
                     {
 
                         var len = b.Offset;
@@ -281,8 +272,9 @@ namespace bincombiner
                     }
 
                     var r = File.ReadAllBytes(b.FileName);
-                    length += b.fi.Length;
+                    length += r.Length;
                     f.Write(r, 0, r.Length);
+
 
 
                     if (n == bindingSource1.Count - 1)
@@ -303,12 +295,86 @@ namespace bincombiner
                                 var len = length % pagesize;
                                 length += len;
 
+
+                                var fillData = new byte[len];
+
+#if true
+                                if (checkBox3.Checked)
+                                {
+                                    for (int i = 0; i < fillData.Length; i++)
+                                    {
+                                        fillData[i] = 0xff;
+                                    }
+                                }
+#endif
+
                                 f.Write(new byte[len], 0, (int)len);
+                            }
+                        }
+                    }
+
+                    // 오프셋 채우기
+
+                    if (bindingSource1.Count > n + 1)
+                    {
+                        var nextfile = (FileInfos)bindingSource1[n + 1];
+
+                        if (length < nextfile.Offset)
+                        {
+                            var len = nextfile.Offset - length;
+
+
+                            var fillData = new byte[len];
+#if true
+                            if (checkBox3.Checked)
+                            {
+                                for (int i = 0; i < fillData.Length; i++)
+                                {
+                                    fillData[i] = 0xff;
+                                }
+                            }
+#endif
+
+                            f.Write(fillData, 0, (int)len);
+                            length += len;
+                        }
+                    }
+                    
+                    if (b.IsWriteVersion)
+                    {
+                        var off = b.VersionOffset;
+                        var curSize = f.Position - fileStartOffset;
+
+                        var WorkPosition = f.Position;
+
+                        try
+                        {
+
+                            if (curSize < off)
+                            {
+                                // 오프셋이 넘 길어???
 
                             }
+                            else
+                            {
+                                f.Position = fileStartOffset + off;
+                                
+                                var vv = new List<byte>();
+                                vv.AddRange(BitConverter.GetBytes(b.VersionMajor).Reverse());
+                                vv.AddRange(BitConverter.GetBytes(b.VersionMinor).Reverse());
 
+                                f.Write(vv.ToArray(), 0, vv.Count);
+                            }
                         }
+                        catch (Exception e)
+                        {
+                            Log($"Version write fail : {e.Message}");
+                        }
+                        finally
+                        {
 
+                            f.Position = WorkPosition;
+                        }
                     }
 
 
@@ -382,8 +448,29 @@ namespace bincombiner
                     e.Cancel = true;
                 }
             }
+        }
+
+        void LoadConfig(string filename)
+        {
+            bindingSource1.List.Clear();
+
+            try
+            {
+                var i = JsonConvert.DeserializeObject<List<FileInfos>>(File.ReadAllText(filename));
+                foreach (var f in i)
+                {
+                    bindingSource1.List.Add(f);
+                }
+
+                RefreshCrc();
+            }
+            catch (Exception exception)
+            {
+                MessageBox.Show($"저장 파일 파싱 실패\n{exception.Message}");
+            }
 
         }
+
 
         private void button8_Click(object sender, EventArgs e)
         {
@@ -393,22 +480,7 @@ namespace bincombiner
 
             if (ofd.ShowDialog() == DialogResult.OK)
             {
-                bindingSource1.List.Clear();
-
-                try
-                {
-                    var i = JsonConvert.DeserializeObject<List<FileInfos>>(File.ReadAllText(ofd.FileName));
-                    foreach (var f in i)
-                    {
-                        bindingSource1.List.Add(f);
-                    }
-
-                    RefreshCrc();
-                }
-                catch (Exception exception)
-                {
-                    MessageBox.Show($"저장 파일 파싱 실패\n{exception.Message}");
-                }
+                LoadConfig(ofd.FileName);
 
 
             }
@@ -430,7 +502,6 @@ namespace bincombiner
         {
             try
             {
-                FileInfos prv = null;
                 long length = 0;
 
                 int pagesize = 0;
@@ -439,25 +510,16 @@ namespace bincombiner
                     pagesize = cfg.PageSize * 1024;
                 }
 
-                foreach (FileInfos b in bindingSource1)
+
+                for (int i = 0; i < bindingSource1.Count; i++)
                 {
-                    if (prv != null)
-                    {
-                        b.Offset = length;
-                    }
+                    var b = (FileInfos)bindingSource1[i];
 
-                    if (b.fi == null || !b.fi.Exists)
-                    {
-
-                    }
-
-
-                    if (prv == null)
+                    if (i == 0)
                     {
                         // 처음건 오프셋 더하기
                         length += b.Offset;
                     }
-
 
                     length += b.fi.Length;
 
@@ -467,12 +529,14 @@ namespace bincombiner
                         length += rem;
                     }
 
-                    prv = b;
+                    if (bindingSource1.Count > i + 1)
+                    {
+                        var nb = (FileInfos)bindingSource1[i + 1];
+                        nb.Offset = length;
+                    }
                 }
 
                 dataGridView1.Refresh();
-
-                prv = null;
 
             }
             catch (Exception exception)
