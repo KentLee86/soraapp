@@ -4,7 +4,7 @@ title:  "BinCombiner - Binary 파일 합치기"
 date:   2020-10-07 14:52:12 +0900
 categories: jekyll update
 ---
-![image-20201007153540281]({{site.url}}/{{site.baseurl}}/imgs/bincominer.assets/image-20201007154131580.png)
+![image-20201007153540281]({{site.baseurl}}/imgs/bincominer.assets/image-20201007154131580.png)
 
 
 
@@ -12,13 +12,14 @@ categories: jekyll update
 
 # 사용법
 
-![2020-10-07_15-51-30]({{site.url}}/{{site.baseurl}}/imgs/bincominer.assets/2020-10-07_15-51-30.gif)
+![2020-10-07_15-51-30]({{site.baseurl}}/imgs/bincominer.assets/2020-10-07_15-51-30.gif)
+
 
 
 
 실행 결과
 
-![image-20201007154927810]({{site.url}}/{{site.baseurl}}/imgs/bincominer.assets/image-20201007154927810.png)
+![image-20201007154927810]({{site.baseurl}}/imgs/bincominer.assets/image-20201007154927810.png)
 
 
 
@@ -32,5 +33,5 @@ categories: jekyll update
 
 ## v2
 
-[다운로드]({{site.url}}/{{site.baseurl}}/download/bincombiner_v2.zip)
+[다운로드]({{site.baseurl}}/download/bincombiner_v2.zip)
 

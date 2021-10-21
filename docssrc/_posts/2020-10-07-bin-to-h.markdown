@@ -5,7 +5,7 @@ date:   2020-10-07 14:52:12 +0900
 
 categories: jekyll update
 --- 
-![image-20201007160213227]({{site.url}}/{{site.baseurl}}/imgs/bintoh.assets/image-20201007160213227.png)
+![image-20201007160213227]({{site.baseurl}}/imgs/bintoh.assets/image-20201007160213227.png)
 
 
 
@@ -37,5 +37,5 @@ categories: jekyll update
 
 ## v1
 
-[다운로드]({{site.url}}/{{site.baseurl}}/download/bintoh_v1.zip)
+[다운로드]({{site.baseurl}}/download/bintoh_v1.zip)
 

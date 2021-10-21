@@ -85,6 +85,17 @@ class FileInfos
         set;
     }
 
+    public enum Endian
+    {
+        Little,
+        Big
+    }
+
+    public Endian DataEndian { get; set; }
+
+
+
+
     public UInt32 _crc;
     public string CRC
     {

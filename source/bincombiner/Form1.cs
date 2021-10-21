@@ -325,7 +325,7 @@ namespace bincombiner
 
 
                             var fillData = new byte[len];
-#if true
+#if false
                             if (checkBox3.Checked)
                             {
                                 for (int i = 0; i < fillData.Length; i++)
@@ -333,6 +333,13 @@ namespace bincombiner
                                     fillData[i] = 0xff;
                                 }
                             }
+#else
+
+                            if (checkBox3.Checked)
+                            {
+                                fillData = Enumerable.Repeat((byte)0xff, (int)len).ToArray();
+                            }
+                            
 #endif
 
                             f.Write(fillData, 0, (int)len);

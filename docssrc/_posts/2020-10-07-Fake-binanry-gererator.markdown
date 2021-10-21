@@ -5,7 +5,7 @@ date:   2020-10-07 14:52:12 +0900
 
 categories: jekyll update
 --- 
-![image-20201007153540281]({{site.url}}/{{site.baseurl}}/imgs/fakebin.assets/image-20201007153540281.png)
+![image-20201007153540281]({{site.baseurl}}/imgs/fakebin.assets/image-20201007153540281.png)
 
 
 
@@ -22,5 +22,5 @@ categories: jekyll update
 
 ## v2
 
-[다운로드]({{site.url}}/{{site.baseurl}}/download/fbg_v1.zip)
+[다운로드]({{site.baseurl}}/download/fbg_v1.zip)
 
